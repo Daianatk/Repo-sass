@@ -1,0 +1,423 @@
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+//titulos principales
+.titulo__principal--md {
+    text-align: center;
+    color: $azul;
+    font-size: $textLg;
+    font-family: $fontMain;
+    font-weight: $textBold;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+//banners internos
+.banner__principal {
+    width: 100%;
+    height: auto;
+ }
+
+//banner animacion
+@keyframes bannerAnimaciones {
+    0% {
+        background-image: url(../img/banner01.jpg);
+    }
+
+    25% {
+        background-image: url(../img/banner02.jpg);
+    }
+
+    50% {
+        background-image: url(../img/banner03.jpg);
+    }
+
+    75% {
+        background-image: url(../img/banner04.jpg);
+    }
+
+    100% {
+        background-image: url(../img/banner05.jpg);
+    }
+}
+
+#slider__general {
+    height: 65vh;
+    background-size: cover;
+    animation-name: bannerAnimaciones;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 55vh;
+
+        @media (min-width: 360px) and (max-width: 768px) {
+            height: 45vh;
+        }
+    }
+}
+
+//Convenios
+.contenido__convenios {
+    background-color: $light;
+    padding: 40px 0px;
+
+    .logos__convenios--sx {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    a {
+        text-align: center;
+        padding: 40px;
+        font-size: $textMd;
+        font-family: $fontMain;
+        font-weight: $textRegular;
+        text-decoration: none;
+        color: $enlace;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $hover-enlace;
+            font-weight: $textRegular;
+            border: solid 0px $light;
+        }
+    }
+}
+
+//especialidades Home
+.contenedor__especialidad {
+    height: auto;
+    width: auto;
+    background: $azul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.fondo__enlace {
+    font-size: $textMd;
+    font-family: $fontMain;
+    font-weight: $textRegular;
+    background: $content;
+    padding: 0;
+    margin: 0;
+
+    a {
+        text-align: center;
+        padding: 40px;
+        font-size: $textMd;
+        font-family: $fontMain;
+        font-weight: $textRegular;
+        text-decoration: none;
+        color: $enlace;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $cian;
+            font-weight: $textRegular;
+            border: solid 0px $light;
+        }
+    }
+}
+
+//Quienes Somos Home
+article {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    .imagen__medico {
+        width: $w-40;
+        height: auto;
+        padding: 50px 0px;
+        border-radius: 5px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .contenido__staff {
+        text-align: justify;
+        font-size: $textMd;
+        font-family: $fontMain;
+        background: $lila;
+        color: $light;
+        width: 600px;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        margin: 50px 0px;
+        padding: 50px 50px;
+
+        .boton__mas {
+            padding: 50px 0px;
+            text-align: center;
+            display: flex;
+            justify-content: end;
+            font-size: $textRegular;
+            font-size: $textMd;
+            font-family: $fontMain;
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                color: $dark;
+                font-weight: $textBold;
+                border: solid 0px $dark;
+            }
+        }
+    }
+}
+
+//Formulario suscripcion
+main {
+    background: linear-gradient(to right, #00b4f6 0%, #00d9e2 66%, #00ecd8 100%);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: $white;
+    font-family: $fontMain;
+    font-size: $textMd;
+    padding: 20px;
+    .seccion__formulario {
+        padding-left: 50px;
+        .boton__azul {
+            background: $azul;
+            font-family: $fontMain;
+            font-size: $textMd;
+            line-height: 40px;
+            color: $white;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
+            padding: 0 30px;
+            cursor: pointer;
+            margin: 2px;
+         }
+         .input__suscripcion {
+            cursor: text;
+            font-family: $fontMain;
+            margin: 0;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 130px 0 20px;
+            border: none;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: $textMd;
+            color: $marron;
+         }
+     }
+ }
+
+ //Nosotros
+ .contenido__nosotros {
+    text-align: justify;
+    font-family: $fontMain;
+    font-size: $textMd;
+    background: $content;
+    color: $black;
+    word-spacing: $w-50;
+    width: 600px;
+    height: auto;
+    padding: 50px 50px;
+ }
+
+ .img__nosotros {
+    width: $w-40;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    img {
+        width: $w-100;
+        height: auto;
+        bottom: 0;
+        left: 0;
+     }
+ }
+
+ .contenedor__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    text-decoration: none;
+    padding: 40px 0px;
+    img {
+        width: $w-100;
+     }
+ }
+
+ //Especialidades
+ .contenido__especialidades {
+    text-align: justify;
+    font-size: $textMd;
+    background: $content;
+    color: $black;
+    word-spacing: $w-50;
+    width: 600px;
+    height: auto;
+    padding: 50px 50px;
+ }
+
+ .img__especialidades {
+    width: $w-40;
+    height: auto;
+    bottom: 0;
+    left: 0;
+ }
+
+ .contenedor__especialidades {
+    background: $content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 20px 0px;
+    img {
+        width: $w-100;
+     }
+ }
+
+ //Staff Médico
+ .img__staff {
+    width: 40%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+ }
+ 
+ .contenido__medicos {
+    text-align: justify;
+    font-size: $textMd;
+    font-family: $fontMain;
+    background: $content;
+    color: $black;
+    word-spacing: $w-50;
+    width: 600px;
+    height: auto;
+    padding: 50px 50px;
+ }
+ 
+ .galeria__staff {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    .figura {
+        text-align: center;
+        color: $azul;
+        font-weight: $textBold;
+        text-decoration: none;
+        .figura__imagen {
+            width: $w-100;
+            height: auto;
+            bottom: 0;
+            left: 0;
+         }
+     }
+ }
+
+ //Servicios
+ .contenido__servicios {
+    text-align: justify;
+    font-size: $textMd;
+    font-family: $fontMain;
+    background: $content;
+    color: $black;
+    word-spacing: $w-50;
+    width: 600px;
+    height: auto;
+    padding: 50px 50px;
+ }
+
+ .img__servicios {
+    width: $w-40;
+    height: auto;
+    bottom: 0;
+    left: 0;
+ }
+ 
+ .figura__servicios {
+    width: $w-100;
+    height: auto;
+    bottom: 0;
+    left: 0;
+ }
+
+ //Horario
+ .horario {
+    margin: 20px 20px;
+ }
+ 
+ .contenedor__horarios {
+    position: relative;
+    font-family: $fontMain;
+    margin: 50px 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    .imagen__horario {
+        width: 80%;
+        padding: 20px 80px;
+     }
+ }
+ 
+ .formulario__horarios {
+    width: 500px;
+    .input__horario {
+        cursor: text;
+        font-family: $fontMain;
+        margin: 10px 0px;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 130px 0 20px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        font-size: $textMd;
+        color: $marron;
+        border-color:$celeste;
+     }
+     .boton__azul {
+        background: $azul;
+        font-family: $fontMain;
+        font-size: $textMd;
+        line-height: 40px;
+        color: $white;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
+        padding: 0 30px;
+        cursor: pointer;
+        margin: 2px;
+     }
+ 
+ }
+ 
+ .texto__horario {
+    color: $black;
+    text-align: center;
+    font-family: $fontMain;
+    margin: 20px;
+ }
+ 
+ .contenido__horario {
+    color: $black;
+    font-family: $fontMain;
+    text-align: center;
+ }
+ 

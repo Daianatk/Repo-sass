@@ -1,0 +1,65 @@
+//Nesting - Anidación
+
+//Menú principal
+.menu__header {
+    background: $mainColor;
+    position: sticky;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width : 1024px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 360px) and (max-width: 768px) {
+                position: sticky;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            padding: 20px 0px;
+            margin-right: 20px;
+
+            a {
+                font-size: $textMd;
+                font-family: $fontMain;
+                text-decoration: none;
+                color: $enlace;
+
+                &:hover {
+                    color: $celeste;
+                    font-weight: $textBold;
+                    border: solid 0px $light;
+
+                    .active {
+                        color: $hover-enlace;
+                        font-weight: $textBold;
+                        border: solid 0px $light;
+                        text-decoration: none;
+
+                        @media (min-width: 360px) and (max-width: 768px) {
+                            font-size: $textSm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

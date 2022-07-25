@@ -1,0 +1,66 @@
+//Menú footer principal
+footer {
+    margin: 50px;
+
+    .menu__footer {
+        width: 100%;
+        position: static;
+        left: 0px;
+        padding: 20px 0px;
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+
+        @media (min-width : 1024px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+
+                @media (min-width: 360px) and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                padding: 20px 0px;
+                margin-right: 20px;
+
+                a {
+                    font-size: $textMd;
+                    font-family: $fontMain;
+                    text-decoration: none;
+                    color: $enlace;
+
+                    &:hover {
+                        color: $hover-enlace;
+                        font-weight: 600;
+                        border: solid 0px $light;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+.footer__copyright {
+    font-size: $textMd;
+    font-family: $fontMain;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}

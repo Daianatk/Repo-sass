@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.menu__header {
+  background: rgba(243, 248, 250, 0.932);
+  position: sticky;
+  top: 0;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
+  .menu__header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 768px) {
+  .menu__header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu__header ul {
+  display: flex;
+}
+.menu__header ul li {
+  list-style: none;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+.menu__header ul li a {
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #0f1d3a;
+}
+.menu__header ul li a:hover {
+  color: #89bada;
+  font-weight: 700;
+  border: solid 0px #f9f9fa;
+}
+.menu__header ul li a:hover .active {
+  color: #89bada;
+  font-weight: 700;
+  border: solid 0px #f9f9fa;
+  text-decoration: none;
+}
+@media (min-width: 360px) and (max-width: 768px) {
+  .menu__header ul li a:hover .active {
+    font-size: 1em;
+  }
+}
+
+* {
+  Margin: 0;
+  padding: 0;
+}
+
+.titulo__principal--md {
+  text-align: center;
+  color: #0032a0;
+  font-size: 1.8em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+.banner__principal {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes bannerAnimaciones {
+  0% {
+    background-image: url(../img/banner01.jpg);
+  }
+  25% {
+    background-image: url(../img/banner02.jpg);
+  }
+  50% {
+    background-image: url(../img/banner03.jpg);
+  }
+  75% {
+    background-image: url(../img/banner04.jpg);
+  }
+  100% {
+    background-image: url(../img/banner05.jpg);
+  }
+}
+#slider__general {
+  height: 65vh;
+  background-size: cover;
+  animation-name: bannerAnimaciones;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #slider__general {
+    height: 55vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 768px) {
+  #slider__general {
+    height: 45vh;
+  }
+}
+
+.contenido__convenios {
+  background-color: #f9f9fa;
+  padding: 40px 0px;
+}
+.contenido__convenios .logos__convenios--sx {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.contenido__convenios a {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0f1d3a;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.contenido__convenios a:hover {
+  color: #89bada;
+  font-weight: 400;
+  border: solid 0px #f9f9fa;
+}
+
+.contenedor__especialidad {
+  height: auto;
+  width: auto;
+  background: #0032a0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.fondo__enlace {
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  background: #f3fcfc;
+  padding: 0;
+  margin: 0;
+}
+.fondo__enlace a {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0f1d3a;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.fondo__enlace a:hover {
+  color: #0a96ff;
+  font-weight: 400;
+  border: solid 0px #f9f9fa;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+article .imagen__medico {
+  width: 40%;
+  height: auto;
+  padding: 50px 0px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+}
+article .contenido__staff {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  background: #ba81f0;
+  color: #f9f9fa;
+  width: 600px;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  margin: 50px 0px;
+  padding: 50px 50px;
+}
+article .contenido__staff .boton__mas {
+  padding: 50px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  font-size: 400;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+article .contenido__staff .boton__mas:hover {
+  color: #080311;
+  font-weight: 700;
+  border: solid 0px #080311;
+}
+
+main {
+  background: linear-gradient(to right, #00b4f6 0%, #00d9e2 66%, #00ecd8 100%);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  padding: 20px;
+}
+main .seccion__formulario {
+  padding-left: 50px;
+}
+main .seccion__formulario .boton__azul {
+  background: #0032a0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  padding: 0 30px;
+  cursor: pointer;
+  margin: 2px;
+}
+main .seccion__formulario .input__suscripcion {
+  cursor: text;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 130px 0 20px;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  color: #646464;
+}
+
+.contenido__nosotros {
+  text-align: justify;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  background: #f3fcfc;
+  color: #0a0a0a;
+  word-spacing: 50%;
+  width: 600px;
+  height: auto;
+  padding: 50px 50px;
+}
+
+.img__nosotros {
+  width: 40%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+.img__nosotros img {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.contenedor__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  text-decoration: none;
+  padding: 40px 0px;
+}
+.contenedor__card img {
+  width: 100%;
+}
+
+.contenido__especialidades {
+  text-align: justify;
+  font-size: 1.2em;
+  background: #f3fcfc;
+  color: #0a0a0a;
+  word-spacing: 50%;
+  width: 600px;
+  height: auto;
+  padding: 50px 50px;
+}
+
+.img__especialidades {
+  width: 40%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.contenedor__especialidades {
+  background: #f3fcfc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+.contenedor__especialidades img {
+  width: 100%;
+}
+
+.img__staff {
+  width: 40%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.contenido__medicos {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  background: #f3fcfc;
+  color: #0a0a0a;
+  word-spacing: 50%;
+  width: 600px;
+  height: auto;
+  padding: 50px 50px;
+}
+
+.galeria__staff {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+.galeria__staff .figura {
+  text-align: center;
+  color: #0032a0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.galeria__staff .figura .figura__imagen {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.contenido__servicios {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  background: #f3fcfc;
+  color: #0a0a0a;
+  word-spacing: 50%;
+  width: 600px;
+  height: auto;
+  padding: 50px 50px;
+}
+
+.img__servicios {
+  width: 40%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.figura__servicios {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.horario {
+  margin: 20px 20px;
+}
+
+.contenedor__horarios {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  margin: 50px 50px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.contenedor__horarios .imagen__horario {
+  width: 80%;
+  padding: 20px 80px;
+}
+
+.formulario__horarios {
+  width: 500px;
+}
+.formulario__horarios .input__horario {
+  cursor: text;
+  font-family: "Noto Sans", sans-serif;
+  margin: 10px 0px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 130px 0 20px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  color: #646464;
+  border-color: #89bada;
+}
+.formulario__horarios .boton__azul {
+  background: #0032a0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  padding: 0 30px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.texto__horario {
+  color: #0a0a0a;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  margin: 20px;
+}
+
+.contenido__horario {
+  color: #0a0a0a;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+}
+
+footer {
+  margin: 50px;
+}
+footer .menu__footer {
+  width: 100%;
+  position: static;
+  left: 0px;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+@media (min-width: 1024px) {
+  footer .menu__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
+  footer .menu__footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1024px) and (min-width: 360px) and (max-width: 768px) {
+  footer .menu__footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer .menu__footer ul {
+  display: flex;
+}
+footer .menu__footer ul li {
+  list-style: none;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+footer .menu__footer ul li a {
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #0f1d3a;
+}
+footer .menu__footer ul li a:hover {
+  color: #89bada;
+  font-weight: 600;
+  border: solid 0px #f9f9fa;
+}
+
+.footer__copyright {
+  font-size: 1.2em;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+#contenido__home {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header" "slider" "contenido__convenios" "especialidades__home" "nosotros__home" "suscribete" "footer";
+}
+#contenido__home #header {
+  grid-area: header;
+}
+#contenido__home #slider {
+  grid-area: slider;
+}
+#contenido__home #contenido__convenios {
+  grid-area: contenido__convenios;
+}
+#contenido__home #especialidades__home {
+  grid-area: especialidades__home;
+}
+#contenido__home #nosotros__home {
+  grid-area: nosotros__home;
+}
+#contenido__home #suscribete {
+  grid-area: suscribete;
+}
+#contenido__home #footer {
+  grid-area: footer;
+}
+
+#contenido__nosotros {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header" "slider" "nosotros__contenido" "nosotros__card" "suscribete" "footer";
+}
+#contenido__nosotros #header {
+  grid-area: header;
+}
+#contenido__nosotros #slider {
+  grid-area: slider;
+}
+#contenido__nosotros #nosotros__contenido {
+  grid-area: nosotros__contenido;
+}
+#contenido__nosotros #nosotros__card {
+  grid-area: nosotros__card;
+}
+#contenido__nosotros #suscribete {
+  grid-area: suscribete;
+}
+#contenido__nosotros #footer {
+  grid-area: footer;
+}
+
+#contenido__especialidades {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header" "slider" "especialidades__intro" "especialidades__esp" "suscribete" "footer";
+}
+#contenido__especialidades #header {
+  grid-area: header;
+}
+#contenido__especialidades #slider {
+  grid-area: slider;
+}
+#contenido__especialidades #especialidades__intro {
+  grid-area: especialidades__intro;
+}
+#contenido__especialidades #especialidades__esp {
+  grid-area: especialidades__esp;
+}
+#contenido__especialidades #suscribete {
+  grid-area: suscribete;
+}
+#contenido__especialidades #footer {
+  grid-area: footer;
+}
+
+#contenido__staff {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header" "slider" "staff__contenido" "staff__card" "suscribete" "footer";
+}
+#contenido__staff #header {
+  grid-area: header;
+}
+#contenido__staff #slider {
+  grid-area: slider;
+}
+#contenido__staff #staff__contenido {
+  grid-area: staff__contenido;
+}
+#contenido__staff #staff__card {
+  grid-area: staff__card;
+}
+#contenido__staff #suscribete {
+  grid-area: suscribete;
+}
+#contenido__staff #footer {
+  grid-area: footer;
+}
+
+#contenido__servicios {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header" "slider" "servicios__contenido" "servicios__card" "suscribete" "footer";
+}
+#contenido__servicios #header {
+  grid-area: header;
+}
+#contenido__servicios #slider {
+  grid-area: slider;
+}
+#contenido__servicios #servicios__contenidos {
+  grid-area: servicios__contenido;
+}
+#contenido__servicios #servicios__card {
+  grid-area: servicios__card;
+}
+#contenido__servicios #suscribete {
+  grid-area: suscribete;
+}
+#contenido__servicios #footer {
+  grid-area: footer;
+}
+
+#contenido__horarios {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header" "slider" "horarios__contenido" "horarios__formulario" "suscribete" "footer";
+}
+#contenido__horarios #header {
+  grid-area: header;
+}
+#contenido__horarios #slider {
+  grid-area: slider;
+}
+#contenido__horarios #horarios__contenido {
+  grid-area: horarios__contenido;
+}
+#contenido__horarios #horarios__formulario {
+  grid-area: horarios__formulario;
+}
+#contenido__horarios #suscribete {
+  grid-area: suscribete;
+}
+#contenido__horarios #footer {
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=main.css.map */
