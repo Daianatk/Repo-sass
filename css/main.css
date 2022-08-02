@@ -42,7 +42,7 @@
   font-size: 1.2em;
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
-  color: #0f1d3a;
+  color: #080311;
 }
 .menu__header ul li a:hover {
   color: #89bada;
@@ -50,7 +50,7 @@
   border: solid 0px #f9f9fa;
 }
 .menu__header ul li a:hover .active {
-  color: #89bada;
+  color: #f9f9fa;
   font-weight: 700;
   border: solid 0px #f9f9fa;
   text-decoration: none;
@@ -122,10 +122,13 @@
 }
 .contenido__convenios .logos__convenios--sx {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
+  flex-direction: row;
 }
 .contenido__convenios a {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
   text-align: center;
   padding: 40px;
   font-size: 1.2em;
@@ -133,8 +136,6 @@
   font-weight: 400;
   text-decoration: none;
   color: #0f1d3a;
-  display: flex;
-  justify-content: center;
   cursor: pointer;
 }
 .contenido__convenios a:hover {
@@ -144,13 +145,13 @@
 }
 
 .contenedor__especialidad {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   height: auto;
   width: auto;
   background: #0032a0;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  justify-items: center;
   flex-wrap: wrap;
   text-decoration: none;
 }
@@ -159,11 +160,14 @@
   font-size: 1.2em;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  background: #f3fcfc;
+  background: #89bada;
   padding: 0;
   margin: 0;
 }
 .fondo__enlace a {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
   text-align: center;
   padding: 40px;
   font-size: 1.2em;
@@ -171,19 +175,18 @@
   font-weight: 400;
   text-decoration: none;
   color: #0f1d3a;
-  display: flex;
-  justify-content: center;
   cursor: pointer;
 }
 .fondo__enlace a:hover {
-  color: #0a96ff;
+  color: #0032a0;
   font-weight: 400;
-  border: solid 0px #f9f9fa;
+  border: solid 0px #89bada;
 }
 
 article {
   display: flex;
   justify-content: center;
+  flex-direction: none;
   padding: 0;
   margin: 0;
 }
@@ -209,9 +212,10 @@ article .contenido__staff {
   padding: 50px 50px;
 }
 article .contenido__staff .boton__mas {
-  padding: 50px 0px;
-  text-align: center;
   display: flex;
+  justify-content: center;
+  flex-direction: none;
+  padding: 50px 0px;
   justify-content: end;
   font-size: 400;
   font-size: 1.2em;
@@ -226,9 +230,10 @@ article .contenido__staff .boton__mas:hover {
 }
 
 main {
-  background: linear-gradient(to right, #00b4f6 0%, #00d9e2 66%, #00ecd8 100%);
   display: flex;
   justify-content: center;
+  flex-direction: none;
+  background: linear-gradient(to right, #00b4f6 0%, #00d9e2 66%, #00ecd8 100%);
   justify-items: center;
   color: #ffffff;
   font-family: "Noto Sans", sans-serif;
@@ -266,12 +271,12 @@ main .seccion__formulario .input__suscripcion {
   color: #646464;
 }
 
-.contenido__nosotros {
+.contenido__nosotros, .contenido__medicos, .contenido__servicios, .contenido__especialidades {
   text-align: justify;
   font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
-  background: #f3fcfc;
-  color: #0a0a0a;
+  background: #89bada;
+  color: #080311;
   word-spacing: 50%;
   width: 600px;
   height: auto;
@@ -279,39 +284,32 @@ main .seccion__formulario .input__suscripcion {
 }
 
 .img__nosotros {
-  width: 40%;
-  height: auto;
+  width: 600px;
+  height: 400px;
   bottom: 0;
   left: 0;
+  object-fit: cover;
 }
 .img__nosotros img {
-  width: 100%;
+  width: 50%;
   height: auto;
   bottom: 0;
   left: 0;
+  object-fit: cover;
 }
 
 .contenedor__card {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   justify-content: space-around;
-  justify-items: center;
   text-decoration: none;
   padding: 40px 0px;
 }
 .contenedor__card img {
   width: 100%;
-}
-
-.contenido__especialidades {
-  text-align: justify;
-  font-size: 1.2em;
-  background: #f3fcfc;
-  color: #0a0a0a;
-  word-spacing: 50%;
-  width: 600px;
-  height: auto;
-  padding: 50px 50px;
+  height: 300px;
+  justify-items: center;
 }
 
 .img__especialidades {
@@ -322,11 +320,11 @@ main .seccion__formulario .input__suscripcion {
 }
 
 .contenedor__especialidades {
-  background: #f3fcfc;
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  background: #f9f9fa;
   justify-content: space-around;
-  justify-items: center;
   flex-wrap: wrap;
   text-decoration: none;
   padding: 20px 0px;
@@ -340,18 +338,6 @@ main .seccion__formulario .input__suscripcion {
   height: auto;
   bottom: 0;
   left: 0;
-}
-
-.contenido__medicos {
-  text-align: justify;
-  font-size: 1.2em;
-  font-family: "Noto Sans", sans-serif;
-  background: #f3fcfc;
-  color: #0a0a0a;
-  word-spacing: 50%;
-  width: 600px;
-  height: auto;
-  padding: 50px 50px;
 }
 
 .galeria__staff {
@@ -372,28 +358,16 @@ main .seccion__formulario .input__suscripcion {
   left: 0;
 }
 
-.contenido__servicios {
-  text-align: justify;
-  font-size: 1.2em;
-  font-family: "Noto Sans", sans-serif;
-  background: #f3fcfc;
-  color: #0a0a0a;
-  word-spacing: 50%;
-  width: 600px;
-  height: auto;
-  padding: 50px 50px;
-}
-
 .img__servicios {
-  width: 40%;
-  height: auto;
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
   bottom: 0;
   left: 0;
 }
 
 .figura__servicios {
-  width: 100%;
-  height: auto;
+  height: 40%;
   bottom: 0;
   left: 0;
 }
@@ -405,14 +379,15 @@ main .seccion__formulario .input__suscripcion {
 .contenedor__horarios {
   position: relative;
   font-family: "Noto Sans", sans-serif;
-  margin: 50px 50px;
+  margin: 20px 40px;
   display: flex;
   align-content: center;
   align-items: center;
 }
 .contenedor__horarios .imagen__horario {
   width: 80%;
-  padding: 20px 80px;
+  padding: 20px 0px;
+  object-fit: cover;
 }
 
 .formulario__horarios {

@@ -2,7 +2,7 @@
 
 //Menú principal
 .menu__header {
-    background: $mainColor;
+    background: map-get($map: $colors, $key: 'uno');
     position: sticky;
     top: 0;
     padding: 10px 30px;
@@ -41,17 +41,17 @@
                 font-size: $textMd;
                 font-family: $fontMain;
                 text-decoration: none;
-                color: $enlace;
+                color: map-get($map: $colors, $key: 'diez');
 
                 &:hover {
-                    color: $celeste;
+                    color: map-get($map: $colors, $key: 'seis');
                     font-weight: $textBold;
-                    border: solid 0px $light;
+                    border: solid 0px map-get($map: $colors, $key: 'cinco');
 
                     .active {
-                        color: $hover-enlace;
+                        color: map-get($map: $colors, $key: 'cinco');
                         font-weight: $textBold;
-                        border: solid 0px $light;
+                        border: solid 0px map-get($map: $colors, $key: 'cinco');
                         text-decoration: none;
 
                         @media (min-width: 360px) and (max-width: 768px) {

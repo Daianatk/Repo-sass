@@ -1,19 +1,21 @@
 //vars globals
 
-//colors
-$mainColor: rgba(243, 248, 250, 0.932);
-$azul: #0032a0;
-$enlace: #0f1d3a;
-$hover-enlace: #89bada;
-$light: #f9f9fa;
-$celeste: #89bada;
-$cian: #0a96ff;
-$lila: #ba81f0;
-$white: #ffffff;
-$dark: #080311;
-$marron: #646464;
-$content: #f3fcfc;
-$black: #0a0a0a;
+//maps
+$colors:(
+    'uno': rgba(243, 248, 250, 0.932),
+    'dos': #0032a0,
+    'tres': #0f1d3a,
+    'cuatro': #89bada,
+    'cinco': #f9f9fa,
+    'seis': #89bada,
+    'siete': #0a96ff,
+    'ocho': #ba81f0,
+    'nueve': #ffffff,
+    'diez': #080311,
+    'once': #646464,
+    'doce': #f3fcfc,
+    'trece': #0a0a0a,
+);
 
 //sizing
 $w-100: 100%;

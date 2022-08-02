@@ -41,12 +41,12 @@ footer {
                     font-size: $textMd;
                     font-family: $fontMain;
                     text-decoration: none;
-                    color: $enlace;
+                    color: map-get($map: $colors, $key: 'tres');
 
                     &:hover {
-                        color: $hover-enlace;
+                        color: map-get($map: $colors, $key: 'cuatro');
                         font-weight: 600;
-                        border: solid 0px $light;
+                        border: solid 0px map-get($map: $colors, $key: 'cinco');
                     }
                 }
             }
