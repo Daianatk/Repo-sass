@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Médico Mayo::Cuidando tu salud, con experiencia</title>
+    <!-- Metas SEO -->
+    <meta name="description"
+        content="Centro Médico especializado en atención personalizada para el cuidado de la salud de las personas en general">
+    <meta name="keywords" content="medicina, salud, especialidades medicas, servicios medicos">
+    <title>Centro Médico Mayo :: Cuidando tu salud, con experiencia</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS-->
     <link rel="stylesheet" href="../css/main.css" />
 </head>
 
@@ -13,83 +21,115 @@
     <div id="contenido__staff">
         <!-- Logo + navegación -->
         <header id="header">
-            <nav class="menu__header">
-                <a href="../index.html">
-                    <img class="header__img--fluid" src="../img/logo.png" alt="Logo de Centro Médico Mayo">
-                </a>
-
-                <ul class="ul__header">
-                    <li class="li__header">
-                        <a class="enlace__header" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="especialidades.html">Especialidades</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="active" href="staff.html">Staff Médico</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="horarios.html">Horarios</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"
+                            alt="logo-centro-medico-mayo" class="image-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="especialidades.html">Especialidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="staff.html">Staff Médico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="horarios.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <form action="horarios.html">
+                                <button type="submit" class="btn btn-info">Reserva tu Cita</button>
+                            </form>
+                        </span>
+                    </div>
+                </div>
             </nav>
         </header>
         <!-- Cierre de la fila Logo + navegación -->
         <!-- Slider -->
         <div id="slider">
-            <img class="banner__principal" src="../img/banner02.jpg" alt="Banner Interno">
+            <img class="banner__principal" src="../img/banner02.jpg" alt="Banner Interno para especialidades">
         </div>
         <!-- Fin de slider -->
         <!-- Staff -->
-        <div id="staff__contenido" class="staff">
-            <h1 class="titulo__principal--md">Conoce a los especialistas de nuestro Centro Médico Mayo</h1>
-            <article class="contenedor">
-                <p class="contenido__medicos">Un staff médico busca reunir un grupo de profesionales para abordar un
-                    caso que, dada su complejidad, requiere de mayor análisis y se beneficia de recibir diferentes
-                    perspectivas médicas. El staff médico es en beneficio para los pacientes cuyos casos son presentados
-                    allí.</p>
-                <img class="img__staff" src="../img/especialistas-cirugia.jpg" alt="Imagen de nuestro staff medico">
+        <section id="staff__contenido">
+            <div class="container-fluid py-5">
+                <h1 class="titulo__principal--md">Conoce a los especialistas de nuestro Centro Médico Mayo</h1>
+            </div>
+            <article class="card container-fluid mb-3 p-3 text-center">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="../img/especialistas-cirugia.jpg" class="img-fluid"
+                            alt="Imagen de nuestro staff medico">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">Un staff médico busca reunir un grupo de profesionales para abordar un
+                                caso que, dada su complejidad, requiere de mayor análisis y se beneficia de recibir
+                                diferentes
+                                perspectivas médicas. El staff médico es en beneficio para los pacientes cuyos casos son
+                                presentados
+                                allí.</p>
+                        </div>
+                    </div>
+                </div>
             </article>
-        </div>
+        </section>
         <!-- Fin de staff -->
         <!-- Contenedores Staff medico -->
-        <section id="staff__card" class="galeria__staff">
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-dermatologia.jpg" alt="especialista en dermatologia">
-                <figcaption>Dermatologia</figcaption>
-                <p>Dr. Cesar Alvares</p>
-            </figure>
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-medicina.jpg" alt="especialista en medicina">
-                <figcaption>Medicina General</figcaption>
-                <p>Dr. Manuel Alarcón</p>
-            </figure>
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-traumatologia.jpg" alt=" especialista en Traumatología">
-                <figcaption>Traumatología</figcaption>
-                <p>Dra. Sandra Torres</p>
-            </figure>
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-neurologia.jpg" alt="especialista en neurologia">
-                <figcaption>Neurología</figcaption>
-                <p>Dra. Pilar Santos</p>
-            </figure>
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-nutricion.jpg" alt="especialista en nutricion">
-                <figcaption>Nutrición</figcaption>
-                <p>Dr. Arturo Borja</p>
-            </figure>
-            <figure class="figura">
-                <img class="figura__imagen" src="../img/especialistas-pediatria.jpg" alt="especialista en pediatria">
-                <figcaption>Pediatria</figcaption>
-                <p>Dr. Fabio Bustamante</p>
-            </figure>
+
+        <section id="staff__card">
+            <div class="contenedor__especialidades">
+                <div><img src="../img/especialistas-dermatologia.jpg" alt="especialista en dermatologia"
+                        class="img__staff">
+                    <p class="texto__horario">Dermatología</p>
+                    <p class="texto__horario">Dr. Cesar Alvares</p>
+                </div>
+                <div><img src="../img/especialistas-medicina.jpg" alt="especialista en medicina" class="img__staff">
+                    <p class="texto__horario">Medicina General</p>
+                    <p class="texto__horario">Dr. Cesar Alvares</p>
+                </div>
+                <div><img src="../img/especialistas-traumatologia.jpg" alt=" especialista en Traumatología"
+                        class="img__staff">
+                    <p class="texto__horario">Traumatologia</p>
+                    <p class="texto__horario">Dra. Sandra Torres</p>
+                </div>
+                <div><img class="figura__imagen" src="../img/especialistas-neurologia.jpg"
+                        alt="especialista en neurologia" class="img__staff">
+                    <p class="texto__horario">Neurología</p>
+                    <p class="texto__horario">Dra. Pilar Santos</p>
+                </div>
+                <div><img src="../img/especialistas-nutricion.jpg" alt="especialista en nutricion" class="img__staff">
+                    <p class="texto__horario">Nutrición</p>
+                    <p class="texto__horario">Dr. Arturo Borja</p>
+                </div>
+                <div><img src="../img/especialistas-pediatria.jpg" alt="especialista en pediatria" class="img__staff">
+                    <p class="texto__horario">Pediatría</p>
+                    <p class="texto__horario">Dr. Fabio Bustamante</p>
+                </div>
+                <div><img src="../img/especialistas-pediatria.jpg" alt="especialista en pediatria" class="img__staff">
+                    <p class="texto__horario">Pediatría</p>
+                    <p class="texto__horario">Dr. Ana Salas</p>
+                </div>
+                <div><img src="../img/especialistas-medicina.jpg" alt="especialista en medicina" class="img__staff">
+                    <p class="texto__horario">Medicina</p>
+                    <p class="texto__horario">Dr. Julio Bustamante</p>
+                </div>
+            </div>
         </section>
         <!-- Fin de contenedor staff medico -->
 
@@ -102,7 +142,7 @@
             <div class="seccion__formulario">
                 <form action="envio.php">
                     <label for="email"></label>
-                    <input class="input__suscripcion" type="text" id="email" placeholder="Escriba su email">
+                    <input class="input__suscripcion" type="text" id="email" placeholder="Tu email">
                     <input class="boton__azul" type="submit" value="Enviar">
                 </form>
             </div>
@@ -110,25 +150,28 @@
         <!-- Fin del Formulario Suscribete -->
         <!-- Footer -->
         <footer id="footer">
-            <nav class="menu__footer">
-                <a href="../index.html">
-                    <img class="footer__logo--md" src="../img/logo.png" alt="Logo de Centro Médico Mayo">
-                </a>
-
-                <ul class="ul__footer">
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Trabaja con nosotros</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Términos y condiciones</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Políticas de privacidad</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Libro de reclamaciones</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo-centro-medico-mayo"
+                            class="image-fluid"></a>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Trabajo con nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Términos y condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Politicas de Privacidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Libro de Reclamaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <hr>
             <div class="footer__copyright">
@@ -136,6 +179,10 @@
             </div>
         </footer>
         <!-- Fin del Footer -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
     </div>
 </body>
 

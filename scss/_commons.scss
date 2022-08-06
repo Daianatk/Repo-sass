@@ -54,49 +54,21 @@
         height: 55vh;
 
         @media (min-width: 360px) and (max-width: 768px) {
-            height: 45vh;
+            height: 35vh;
         }
     }
 }
 
 //mixin para flex
-@mixin d-flex ($justify, $direction){
+@mixin d-flex ($justify, $direction) {
     display: flex;
     justify-content: $justify;
     flex-direction: $direction;
 }
 
-//Convenios
-.contenido__convenios {
-    background-color: map-get($map: $colors, $key: 'cinco');
-    padding: 40px 0px;
-
-    .logos__convenios--sx {
-        @include d-flex(center , row )
-    }
-
-    a {
-        @include d-flex(center, none );
-        text-align: center;
-        padding: 40px;
-        font-size: $textMd;
-        font-family: $fontMain;
-        font-weight: $textRegular;
-        text-decoration: none;
-        color: map-get($map: $colors, $key: 'tres');
-        cursor: pointer;
-
-        &:hover {
-            color: map-get($map: $colors, $key: 'cuatro');
-            font-weight: $textRegular;
-            border: solid 0px map-get($map: $colors, $key: 'cinco');
-        }
-    }
-}
-
 //especialidades Home
 .contenedor__especialidad {
-    @include d-flex(center , row );
+    @include d-flex(center, row);
     height: auto;
     width: auto;
     background: map-get($map: $colors, $key: 'dos');
@@ -109,12 +81,12 @@
     font-size: $textMd;
     font-family: $fontMain;
     font-weight: $textRegular;
-    background: map-get($map: $colors, $key: 'cuatro');
+    background: map-get($map: $colors, $key: 'catorce');
     padding: 0;
     margin: 0;
 
     a {
-        @include d-flex(center , none );
+        @include d-flex(center, none);
         text-align: center;
         padding: 40px;
         font-size: $textMd;
@@ -134,55 +106,12 @@
 
 //Quienes Somos Home
 article {
-    @include d-flex(center , none );
-    padding: 0;
-    margin: 0;
-
-    .imagen__medico {
-        width: $w-60;
-        height: 400px;
-        object-fit: cover;
-        padding: 50px 0px;
-        border-radius: 5px;
-        bottom: 0;
-        left: 0;
-    }
-
-    .contenido__staff {
-        text-align: justify;
-        font-size: $textMd;
-        font-family: $fontMain;
-        background: map-get($map: $colors, $key: 'ocho');
-        color: map-get($map: $colors, $key: 'cinco');
-        width: 600px;
-        bottom: 0;
-        left: 0;
-        height: auto;
-        margin: 50px 0px;
-        padding: 50px 50px;
-
-        .boton__mas {
-            @include d-flex(center , none );
-            padding: 50px 0px;
-            justify-content: end;
-            font-size: $textRegular;
-            font-size: $textMd;
-            font-family: $fontMain;
-            text-decoration: none;
-            color: map-get($map: $colors, $key: 'nueve');
-
-            &:hover {
-                color: map-get($map: $colors, $key: 'diez');
-                font-weight: $textBold;
-                border: solid 0px map-get($map: $colors, $key: 'diez');
-            }
-        }
-    }
+    max-width: 900px;
 }
 
 //Formulario suscripcion
 main {
-    @include d-flex(center , none );
+    @include d-flex(center, none);
     background: linear-gradient(to right, #00b4f6 0%, #00d9e2 66%, #00ecd8 100%);
     justify-items: center;
     color: map-get($map: $colors, $key: 'nueve');
@@ -219,7 +148,8 @@ main {
             border-radius: 25px;
             box-sizing: border-box;
             font-size: $textMd;
-            color: map-get($map: $colors, $key: 'once');;
+            color: map-get($map: $colors, $key: 'once');
+            ;
         }
     }
 }
@@ -269,7 +199,7 @@ main {
 }
 
 .contenedor__card {
-    @include d-flex(center , row );
+    @include d-flex(center, row);
     justify-content: space-around;
     text-decoration: none;
     padding: 40px 0px;
@@ -290,7 +220,7 @@ main {
 }
 
 .contenedor__especialidades {
-    @include d-flex(center , row );
+    @include d-flex(center, row);
     background: map-get($map: $colors, $key: 'cinco');
     justify-content: space-around;
     flex-wrap: wrap;
@@ -304,8 +234,7 @@ main {
 
 //Staff Médico
 .img__staff {
-    width: $w-60;
-    height: auto;
+    width: $w-100;
     bottom: 0;
     left: 0;
 }
@@ -347,64 +276,17 @@ main {
 }
 
 //Horario
-.horario {
-    margin: 20px 20px;
-}
-
-.contenedor__horarios {
-    position: relative;
-    font-family: $fontMain;
-    margin: 20px 40px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-
-    .imagen__horario {
-        width: 80%;
-        padding: 20px 0px;
-        object-fit: cover;
-    }
-}
 
 .formulario__horarios {
     width: 500px;
-
-    .input__horario {
-        cursor: text;
-        font-family: $fontMain;
-        margin: 10px 0px;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 130px 0 20px;
-        border-radius: 25px;
-        box-sizing: border-box;
-        font-size: $textMd;
-        color: map-get($map: $colors, $key: 'once');
-        border-color: map-get($map: $colors, $key: 'seis');
-    }
-
-    .boton__azul {
-        background: map-get($map: $colors, $key: 'dos');
-        font-family: $fontMain;
-        font-size: $textMd;
-        line-height: 40px;
-        color: map-get($map: $colors, $key: 'nueve');
-        border: none;
-        border-radius: 25px;
-        box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
-        padding: 0 30px;
-        cursor: pointer;
-        margin: 2px;
-    }
-
 }
 
 .texto__horario {
     color: map-get($map: $colors, $key: 'trece');
     text-align: center;
     font-family: $fontMain;
-    margin: 20px;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
 }
 
@@ -412,4 +294,57 @@ main {
     color: map-get($map: $colors, $key: 'trece');
     font-family: $fontMain;
     text-align: center;
+}
+
+//Page 404
+.caja__general {
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+.err {
+    color: map-get($map: $colors, $key: 'trece');
+    font-family: $fontMain;
+    font-size: 11rem;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+}
+
+.far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: map-get($map: $colors, $key: 'trece');
+}
+
+.err2 {
+    color: map-get($map: $colors, $key: 'trece');
+    font-size: 11rem;
+    position: absolute;
+    left: 68%;
+    top: 8%;
+}
+
+.msg {
+    text-align: center;
+    font-size: $textLg;
+    position: absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+    font-family: $fontMain;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($map: $colors, $key: 'ocho');
+
+    &:hover {
+        color: map-get($map: $colors, $key: 'dos');
+        text-decoration: underline;
+    }
 }

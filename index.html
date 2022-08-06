@@ -10,55 +10,88 @@
         content="Centro Médico especializado en atención personalizada para el cuidado de la salud de las personas en general">
     <meta name="keywords" content="medicina, salud, especialidades medicas, servicios medicos">
     <title>Centro Médico Mayo :: Cuidando tu salud, con experiencia</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS-->
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <div id="contenido__home">
-        <!-- Logo + navegación -->
         <header id="header">
-            <nav class="menu__header">
-                <a href="index.html">
-                    <img class="header__img--fluid" src="img/logo.png" alt="Logo de Centro Médico Mayo">
-                </a>
-
-                <ul class="ul__header">
-                    <li class="li__header">
-                        <a class="active" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="pages/especialidades.html">Especialidades</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="pages/staff.html">Staff Médico</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="li__header">
-                        <a class="enlace__header" href="pages/horarios.html">Horarios</a>
-                    </li>
-                </ul>
+            <!-- Menú -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo-centro-medico-mayo"
+                            class="image-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/especialidades.html">Especialidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/staff.html">Staff Médico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/horarios.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <form action="./pages/horarios.html">
+                                <button type="submit" class="btn btn-info">Reserva tu Cita</button>
+                            </form>
+                        </span>
+                    </div>
+                </div>
             </nav>
         </header>
         <!-- Cierre de la fila Logo + navegación -->
         <!-- Slider -->
-        <div id="slider__general">
+        <div id="slider__general" class="banner__principal">
         </div>
         <!-- Fin de slider -->
         <!-- Nuestros convenios -->
-        <div id="contenido__convenios" class="contenido__convenios">
-            <h2 class="titulo__principal--md">Nuestros convenios</h2>
-            <div class="logos__convenios--sx">
-                <img src="img/rimac.png" alt="Rimac Seguros">
-                <img src="img/pacifico.png" alt="Pacifíco Seguros">
-                <img src="img/positiva.png" alt="La Positiva Seguros">
-                <img src="img/mapfre.png" alt="Mapfre Seguros">
+        <div id="contenido__convenios">
+            <div class="container-fluid py-5">
+                <h2 class="text-center py-3">Nuestros convenios</h2>
+                <div class="row py-3 mx-3">
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/rimac.png" class="img-fluid" alt="rimac">
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/pacifico.png" class="img-fluid" alt="pacifico">
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/positiva.png" class="img-fluid" alt="lapositiva">
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/mapfre.png" class="img-fluid" alt="mapfre">
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/interseguro.png" class="img-fluid" alt="interseguro">
+                    </div>
+                    <div class="col-xs-6 col-md-4 col-lg-2">
+                        <img src="./img/bnp.png" class="img-fluid" alt="bnp">
+                    </div>
+                </div>
+                <div class=" text-center p-5">
+                    <button type="button" class="btn btn-outline-info">Ver más Convenios + </button>
+                </div>
             </div>
-            <a class="enlace__mas">Ver más ⨭</a>
         </div>
         <!-- Fin de nuestros convenios -->
         <!-- Nuestras Especialidades -->
@@ -76,21 +109,49 @@
         </div>
         <!-- Fin de Nuestras Especialidades -->
         <!-- Sección Quienes Somos -->
-        <div id="nosotros__home">
-            <h1 class="titulo__principal--md">¿Por qué Centro Médico Mayo?</h1>
-            <article class="seccion__nosotros">
-                <img class="imagen__medico" src="img/staff-medico.jpg" alt="Especialista en medicina general">
-                <div class="contenido__staff">
-                    <h3>El Mejor Staff Médico</h3><br>
-                    <p>Médicos de primer nivel y los tecnólogos médicos más especializados, forman parte del staff de
-                        Clínica
-                        Internacional, han sido capacitados en las más modernas aplicaciones que existen en el sector
-                        salud.
-                    </p>
-                    <a href="/pages/staff.html" class="boton__mas">Conoce el Staff ⨭</a>
-                </div>
+        <section id="nosotros__home">
+            <div class="container-fluid py-5">
+                <h2 class="text-center">¿Por qué Centro Médico Mayo?</h2>
+            </div>
+            <article class="card container-fluid mb-3 p-3 text-center">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/staff-medico.jpg" class="img-fluid" alt="Imagen nosotros">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">El Mejor Staff Médico</h5>
+                            <p class="card-text">Médicos de primer nivel y los tecnólogos médicos más especializados,
+                                forman
+                                parte del
+                                staff de Clínica, han sido capacitados en las más modernas aplicaciones que existen en
+                                el
+                                sector salud.</p>
+                            <div class="text-center p-3 mb-2">
+                                <button type="button" class="btn btn-light">Conocé nuestro Staff + </button>
+                            </div>
+                        </div>
+                    </div>
             </article>
+        </section>
+
+        <!-- Contenido -->
+        <div id="contenido__home">
+            <figure class="text-center">
+                <img class="img-fluid p-3" src="./img/joint-commission-international.png"
+                    alt="Joint Commission International">
+                <blockquote class="blockquote">
+                    <p>Joint Commission International</p>
+                </blockquote>
+                <figcaption class="blockquote-footer p-3">
+                    Nuestras clinica está acreditadas por Joint Commission International, <cite
+                        title="Source Title">máxima
+                        distinción internacional otorgada a una entidad de salud. </cite>
+                </figcaption>
+            </figure>
         </div>
+
+
         <!-- Fin de Quienes Somos -->
         <!-- Formulario Suscribete -->
         <main id="suscribete" class="formulario__suscribete">
@@ -101,7 +162,7 @@
             <div class="seccion__formulario">
                 <form action="envio.php">
                     <label for="email"></label>
-                    <input class="input__suscripcion" type="text" id="email" placeholder="Escriba su email">
+                    <input class="input__suscripcion" type="text" id="email" placeholder="Tu Email">
                     <input class="boton__azul" type="submit" value="Enviar">
                 </form>
             </div>
@@ -109,25 +170,28 @@
         <!-- Fin del Formulario Suscribete -->
         <!-- Footer -->
         <footer id="footer">
-            <nav class="menu__footer">
-                <a href="index.html">
-                    <img class="footer__logo--md" src="img/logo.png" alt="Logo de Centro Médico Mayo">
-                </a>
-
-                <ul class="ul__footer">
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Trabaja con nosotros</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Términos y condiciones</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Políticas de privacidad</a>
-                    </li>
-                    <li class="li__footer">
-                        <a class="enlace__footer" href="#">Libro de reclamaciones</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo-centro-medico-mayo"
+                            class="image-fluid"></a>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Trabajo con nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Términos y condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Politicas de Privacidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Libro de Reclamaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <hr>
             <div class="footer__copyright">
@@ -135,6 +199,11 @@
             </div>
         </footer>
         <!-- Fin del Footer -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
     </div>
 </body>
 
