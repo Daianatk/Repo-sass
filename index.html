@@ -15,6 +15,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS-->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png">
 </head>
 
 <body>
@@ -65,32 +67,21 @@
         </div>
         <!-- Fin de slider -->
         <!-- Nuestros convenios -->
+
         <div id="contenido__convenios">
-            <div class="container-fluid py-5">
-                <h2 class="text-center py-3">Nuestros convenios</h2>
-                <div class="row py-3 mx-3">
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/rimac.png" class="img-fluid" alt="rimac">
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/pacifico.png" class="img-fluid" alt="pacifico">
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/positiva.png" class="img-fluid" alt="lapositiva">
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/mapfre.png" class="img-fluid" alt="mapfre">
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/interseguro.png" class="img-fluid" alt="interseguro">
-                    </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
-                        <img src="./img/bnp.png" class="img-fluid" alt="bnp">
-                    </div>
-                </div>
-                <div class=" text-center p-5">
-                    <button type="button" class="btn btn-outline-info">Ver más Convenios + </button>
-                </div>
+            <h2 class="titulo__principal--md">Nuestros convenios</h2>
+            <div class="contenedor__convenios">
+                <a href="./pages/404.html"><img src="./img/rimac.png" class="img-fluid" alt="Seguros rimac"></a>
+                <a href="./pages/404.html"><img src="./img/positiva.png" class="img-fluid" alt="Seguros La Positiva"></a>
+                <a href="./pages/404.html"><img src="./img/pacifico.png" class="img-fluid" alt="Seguros Pacifico"></a>
+                <a href="./pages/404.html"><img src="./img/interseguro.png" class="img-fluid" alt="Seguros Interseguro"></a>
+                <a href="./pages/404.html"><img src="./img/bnp.png" class="img-fluid" alt="Seguros BNP"></a>
+                <a href="./pages/404.html"><img src="./img/mapfre.png" class="img-fluid" alt="Seguros Mapfre"></a>
+            </div>
+            <div class="text-center p-5">
+                <form action="./pages/404.html">
+                    <button type="submit" class="btn btn-outline-info">Ver más Convenios ⨭</button>
+                </form>
             </div>
         </div>
         <!-- Fin de nuestros convenios -->
@@ -98,14 +89,18 @@
         <div id="especialidades__home">
             <h2 class="titulo__principal--md">Nuestras Especialidades</h2>
             <div class="contenedor__especialidad">
-                <a href="#"><img src="img/cardiologia.PNG" alt="Especialidad de Cardiología"></a>
-                <a href="#"><img src="img/psicologia.png" alt="Especialidad de Psicología"></a>
-                <a href="#"><img src="img/medicina-general.png" alt="Especialidad de Medicina General"></a>
-                <a href="#"><img src="img/nutricion.png" alt="Especialidad de Nutrición"></a>
+                <a href="./pages/404.html"><img src="img/cardiologia.PNG" alt="Especialidad de Cardiología"></a>
+                <a href="./pages/404.html"><img src="img/psicologia.png" alt="Especialidad de Psicología"></a>
+                <a href="./pages/404.html"><img src="img/medicina-general.png" alt="Especialidad de Medicina General"></a>
+                <a href="./pages/404.html"><img src="img/nutricion.png" alt="Especialidad de Nutrición"></a>
             </div>
-            <div class="fondo__enlace">
-                <a href="#" class="enlace__mas" href="/pages/especialidades.html">Ver más especialidades ⨭</a>
+
+            <div class="fondo__enlace text-center py-3">
+                <form action="./pages/especialidades.html">
+                    <button type="submit" class="btn btn-outline-primary">Ver más especialidades ⨭</button>
+                </form>
             </div>
+
         </div>
         <!-- Fin de Nuestras Especialidades -->
         <!-- Sección Quienes Somos -->
@@ -128,7 +123,9 @@
                                 el
                                 sector salud.</p>
                             <div class="text-center p-3 mb-2">
-                                <button type="button" class="btn btn-light">Conocé nuestro Staff + </button>
+                                <form action="./pages/staff.html">
+                                    <button type="submit" class="btn btn-light">Conocé nuestro Staff ⨭ </button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -160,7 +157,7 @@
                 <p>Entérate de nuestras novedades</p>
             </div>
             <div class="seccion__formulario">
-                <form action="envio.php">
+                <form action="./pages/404.html">
                     <label for="email"></label>
                     <input class="input__suscripcion" type="text" id="email" placeholder="Tu Email">
                     <input class="boton__azul" type="submit" value="Enviar">
@@ -172,22 +169,22 @@
         <footer id="footer">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo-centro-medico-mayo"
+                    <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo-centro-medico-mayo"
                             class="image-fluid"></a>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Trabajo con nosotros</a>
+                                <a class="nav-link" aria-current="page" href="./pages/404.html">Trabajo con nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Términos y condiciones</a>
+                                <a class="nav-link" href="./pages/404.html">Términos y condiciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Politicas de Privacidad</a>
+                                <a class="nav-link" href="./pages/404.html">Politicas de Privacidad</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Libro de Reclamaciones</a>
+                                <a class="nav-link" href="./pages/404.html">Libro de Reclamaciones</a>
                             </li>
                         </ul>
                     </div>

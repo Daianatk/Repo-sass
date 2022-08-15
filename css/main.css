@@ -54,6 +54,18 @@
   }
 }
 
+.contenedor__convenios {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  background: #ffffff;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
 .contenedor__especialidad {
   display: flex;
   justify-content: center;
@@ -261,8 +273,8 @@ main .seccion__formulario .input__suscripcion {
 
 .caja__general {
   margin: auto;
-  height: 600px;
-  width: 600px;
+  height: 500px;
+  width: 500px;
   position: relative;
 }
 
@@ -296,7 +308,7 @@ main .seccion__formulario .input__suscripcion {
   font-size: 1.8em;
   position: absolute;
   left: 16%;
-  top: 45%;
+  top: 50%;
   width: 75%;
   font-family: "Noto Sans", sans-serif;
 }

@@ -66,6 +66,17 @@
     flex-direction: $direction;
 }
 
+//convenios Home
+.contenedor__convenios {
+    @include d-flex(center, row);
+    height: auto;
+    width: auto;
+    background: map-get($map: $colors, $key: 'nueve');
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
 //especialidades Home
 .contenedor__especialidad {
     @include d-flex(center, row);
@@ -299,8 +310,8 @@ main {
 //Page 404
 .caja__general {
     margin: auto;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     position: relative;
 }
 
@@ -334,7 +345,7 @@ main {
     font-size: $textLg;
     position: absolute;
     left: 16%;
-    top: 45%;
+    top: 50%;
     width: 75%;
     font-family: $fontMain;
 }
